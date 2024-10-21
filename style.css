@@ -1,0 +1,88 @@
+body {
+    font-family: serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  li {
+    margin: 1rem;
+  }
+
+  p {
+    color: #545454;
+    font-size: 20px;
+  }
+  
+  .content {
+    border: 1px solid rgb(99, 99, 99);
+    color: #9a9a9a;
+    padding: 0.5em 0.5em 0 0.5em;
+    font-size: 45px;
+    border-radius: 5px;
+    /* position: fixed;
+    left: 40%;
+    top: 30%; */
+    font-family: serif;
+  }
+  
+
+  .button:hover {
+    background: lightcoral;
+    cursor: pointer;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    padding: 1em;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+  }
+  
+  @keyframes modalopen {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  
+  .modalClose {
+    font-size: 2rem;
+    color: #545454;
+  }
+  
+  .modalClose:hover {
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    padding: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+  .modal-body img {
+    padding-top: 0px;
+  }
